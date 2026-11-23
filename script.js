@@ -45,7 +45,7 @@ function funnel(){
   var d=agg(state.v),steps=[["Tayangan",d.impr],["Klik",d.klik],["Chat",d.chat]];
   if(state.v==="all"){steps.push(["Proyek jadi",P.proyek]);}
   var top=d.impr;
-  document.getElementById("fsub").textContent=state.v==="all"?"Dari 10.000 tayangan jadi 16 proyek. Persentase di kanan adalah sisa dari tahap sebelumnya.":"Proyek dicatat untuk seluruh kampanye, jadi tahap ini tidak ditampilkan per versi.";
+  document.getElementById("fsub").textContent=state.v==="all"?"Dari 10.000 tayangan jadi 16 proyek.":"Proyek dicatat untuk seluruh kampanye, jadi tahap ini tidak ditampilkan per versi.";
   document.getElementById("funnel").innerHTML=steps.map(function(s,i){
     var w=Math.max(0.5,s[1]/top*100),prev=i?s[1]/steps[i-1][1]:null;
     return '<div class="frow"><span>'+s[0]+'</span><div class="bar"><i style="width:'+w+'%"></i></div><em>'+nf.format(s[1])+(prev!==null?' · '+(prev*100).toLocaleString("id-ID",{maximumFractionDigits:1})+'%':'')+'</em></div>';

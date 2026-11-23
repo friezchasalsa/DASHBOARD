@@ -1,4 +1,4 @@
-:root{--bg:#f4f6f4;--card:#ffffff;--ink:#1c2a2f;--mut:#5d6b70;--line:#dde3e0;--a:#6b86a3;--b:#1f7a5a;--acc:#1f7a5a;--soft:#e6efea;color-scheme:light;
+:root{--bg:#f4f6f4;--card:#ffffff;--ink:#1c2a2f;--mut:#126583;--line:#dde3e0;--a:#6b86a3;--b:#1f7a5a;--acc:#1f7a5a;--soft:#e6efea;color-scheme:light;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111a1d;--card:#182428;--ink:#e8efec;--mut:#9fb0b3;--line:#2a3a3f;--a:#8fa9c4;--b:#4fc79a;--acc:#4fc79a;--soft:#1d3029;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#111a1d;--card:#182428;--ink:#e8efec;--mut:#9fb0b3;--line:#2a3a3f;--a:#8fa9c4;--b:#4fc79a;--acc:#4fc79a;--soft:#1d3029;color-scheme:dark}
